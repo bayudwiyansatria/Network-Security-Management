@@ -6,8 +6,10 @@ import socket
 import sys
 import argparse
 host = '192.168.0.100'
+host = '192.168.255.4'
 data_payload = 2048
 backlog = 5
+
 def echo_server(port):
 	""" A simple echo server """
 	# Create a TCP socket
@@ -30,6 +32,7 @@ def echo_server(port):
 			print ("sent %s bytes back to %s" % (data, address))
 		# end connection
 		client.close()
+
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='Socket Server Example')
 	parser.add_argument('--port', action="store", dest="port", type=int, required=True)

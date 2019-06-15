@@ -5,7 +5,9 @@
 import socket
 import sys
 import argparse
+import cryptography;
 host = '192.168.0.100'
+host = '192.168.255.4'
 def echo_client(port):
 	""" A simple echo client """
 	# Create a TCP/IP socket

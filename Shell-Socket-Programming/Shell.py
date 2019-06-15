@@ -16,7 +16,7 @@ def checkFileExist(pathToFile):
 def getCurrentDirectory():
     return os.getcwd();
 
-host = "pi";
+host = "dev.pi";
 username = "pi";
 encrypted = "";
 
